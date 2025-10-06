@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dolphins - Amazing Ocean Creatures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            color: #003344;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: #00796b;
+        }
+
+        #sound-btn {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        #sound-btn:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>🐬 Dolphins - Intelligent Friends of the Sea</h1>
+
+    <nav>
+        <a href="#about">About Dolphins</a>
+        <a href="#facts">Fun Facts</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#sound">Dolphin Sound</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Dolphins</h2>
+            <p>Dolphins are marine mammals known for their intelligence, playful behavior, and friendly nature. They live in oceans and some rivers around the world.</p>
+        </section>
+
+        <section id="facts">
+            <h2>Fun Dolphin Facts</h2>
+            <ul>
+                <li>Dolphins use echolocation to find food and navigate.</li>
+                <li>They can swim up to 25 miles per hour.</li>
+                <li>Dolphins live in groups called pods.</li>
+                <li>Some dolphins can hold their breath for over 10 minutes.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Dolphin Gallery</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Dolphins_jumping.jpg" alt="Dolphins jumping out of the water">
+            <p style="font-size: 0.9em; color: #555;">Photo credit: Wikimedia Commons</p>
+        </section>
+
+        <section id="sound">
+            <h2>Dolphin Clicks Sound</h2>
+            <p>Click the button below to hear real dolphin sounds!</p>
+            <button id="sound-btn">▶️ Play Dolphin Sound</button>
+            <audio id="dolphin-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"></audio>
+            <!-- Replace the URL above with a dolphin sound (see note below) -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dolphin Lovers | Made with ❤️</p>
+    </footer>
+
+    <script>
+        document.getElementById("sound-btn").addEventListener("click", function() {
+            const audio = document.getElementById("dolphin-audio");
+            audio.play();
+        });
+    </script>
+</body>
+</html>
